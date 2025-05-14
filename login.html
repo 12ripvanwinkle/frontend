@@ -1,0 +1,66 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WebLyon – Login</title>
+  <!-- Your final CSS -->
+  <link rel="stylesheet" href="login-styles.css" />
+</head>
+<body>
+  <div class="login-container">
+    <!-- LEFT: Login Form Section -->
+    <div class="login-form-section">
+      <div class="login-form-content">
+        <h1>Let’s get <span class="highlight">started!</span></h1>
+        <p class="subtitle">Log in to WebLyon to start creating magic.</p>
+        <form class="login-form" onsubmit="return false;">
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <img src="email-icon.svg" alt="Email Icon" class="icon" />
+            <input type="email" id="email" placeholder="Enter email" />
+          </div>
+          <!-- Password Field -->
+          <div class="form-group">
+            <label for="password">Password</label>
+            <img src="lock-icon.svg" alt="Password Icon" class="icon" />
+            <input type="password" id="password" placeholder="Enter password" />
+          </div>
+          <!-- Remember me & Forgot Password -->
+          <div class="extra-options">
+            <label><input type="checkbox" id="remember" /> Remember me</label>
+            <a href="#" id="forgot-password" class="forgot-password"
+              >Forgot Password?</a
+            >
+          </div>
+          <!-- Login Button (handled entirely in login.js) -->
+          <button type="button" id="login" class="login-btn">
+            Log in
+          </button>
+        </form>
+        <!-- Divider -->
+        <div class="divider"><span>or</span></div>
+        <!-- Company Registration -->
+        <a href="joinWorkSpace.html" class="register-company-btn"
+          >Register as your company</a
+        >
+        <!-- Sign Up link -->
+        <div class="signup-link">
+          <p>
+            Don’t have an account?
+            <a href="createuser.html">Sign up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- RIGHT: Background Image Section -->
+    <div class="right-image-section"></div>
+  </div>
+
+  <!-- Your Electron login logic -->
+  <script src="login.js"></script>
+</body>
+</html>

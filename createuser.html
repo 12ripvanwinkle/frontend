@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WebLyon – Sign Up</title>
+  <link rel="stylesheet" href="createuser-styles.css" />
+</head>
+<body>
+  <div class="register-container">
+    <div class="register-form">
+      <!-- Title with blue “Up” -->
+      <h2>Sign <span class="highlight">Up</span></h2>
+      <!-- Subtitle -->
+      <p class="subtitle">
+        Connect with your clients and turn your creative vision into reality.
+      </p>
+
+      <!-- Name (icon) -->
+      <div class="form-group">
+        <img src="person-icon.svg" alt="Email" class="icon"/>
+        <input
+          type="text"
+          id="user"
+          placeholder="Enter name"
+        />
+      </div>
+
+      <!-- Email with icon -->
+      <div class="form-group">
+        <img src="email-icon.svg" alt="Email" class="icon"/>
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+        />
+      </div>
+
+      <!-- Password with icon -->
+      <div class="form-group">
+        <img src="lock-icon.svg" alt="Password" class="icon"/>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+        />
+      </div>
+
+      <!-- Terms: checkbox + text on one line -->
+      <div class="terms-row">
+        <input type="checkbox" id="terms" />
+        <label for="terms">
+          I agree with <a href="#">Terms and conditions</a>
+        </label>
+      </div>
+
+      <!-- Full‐width Sign Up -->
+      <button class="auth-btn" id="signup">
+        Create free account
+      </button>
+
+      <!-- Login link -->
+      <p class="login-link">
+        Already have an account? <a href="login.html">Login</a>
+      </p>
+
+      <!-- Footer -->
+      <div class="footer">
+        StackUnderflow.app © 2025
+        <a href="#" class="privacy-link">Privacy Policy</a>
+      </div>
+    </div>
+
+    <!-- Right‐hand image panel -->
+    <div class="register-image"></div>
+  </div>
+
+  <script src="createuser.js"></script>
+</body>
+</html>

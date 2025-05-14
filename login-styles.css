@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ---------- Reset & Base ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* ---------- Main Container ---------- */
+.login-container {
+  display: flex;
+  width: 1000px;
+  height: 560px;
+  background: #0e0e0e;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ---------- LEFT: Form Panel ---------- */
+.login-form-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #131619;
+  padding: 40px;
+}
+
+.login-form-content {
+  max-width: 350px;
+  width: 100%;
+}
+
+/* Heading & Subheading */
+.login-form-content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.login-form-content .highlight {
+  color: #00bfff;
+}
+.login-form-content .subtitle {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+/* Form Groups */
+.login-form .form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.login-form .form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+.login-form .form-group .icon {
+  position: absolute;
+  width: 20px;
+  top: 38px;
+  left: 10px;
+  opacity: 0.8;
+}
+.login-form .form-group input {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.75rem 0.75rem 0.75rem 2.4rem;
+  outline: none;
+}
+
+/* Remember me & Forgot Password */
+.extra-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.extra-options a {
+  color: #00bfff;
+  text-decoration: none;
+}
+.extra-options a:hover {
+  text-decoration: underline;
+}
+
+/* Login Button */
+.login-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #4d90fe;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+.login-btn:hover {
+  background-color: #3b78d1;
+}
+
+/* Divider “or” */
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background: #444;
+}
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+.divider span {
+  position: relative;
+  z-index: 1;
+  padding: 0 10px;
+  background: #131619;
+}
+
+/* Register as Company Button */
+  .right-image-section {
+    flex: 1; 
+    background: url("Weblyon Image.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  

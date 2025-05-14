@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ----- reset & base ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----- card wrapper ----- */
+.register-container {
+  display: flex;
+  width: 1000px;
+  height: 560px;
+  background: #131619;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* ----- left form panel ----- */
+.register-form {
+  flex: 1;
+  padding: 40px 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title + highlight */
+.register-form h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.register-form .highlight {
+  color: #00bfff;
+}
+
+/* Subtitle */
+.register-form .subtitle {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+/* form‐group & icons */
+.form-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+.form-group .icon {
+  position: absolute;
+  width: 20px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+
+/* inputs */
+.form-group input {
+  width: 100%;
+  padding: 12px 14px 12px 40px; /* space for icon */
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+.form-group input::placeholder {
+  color: #777;
+}
+
+/* terms row: force one‐line */
+.terms-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.terms-row input[type="checkbox"] {
+  accent-color: #2c94da;
+}
+.terms-row a {
+  color: #00bfff;
+  text-decoration: none;
+}
+.terms-row a:hover {
+  text-decoration: underline;
+}
+
+/* sign up button: full width */
+.auth-btn {
+  width: 100%;
+  padding: 12px 0;
+  margin-bottom: 18px;
+  background: #4d90fe;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.auth-btn:hover {
+  background: #3b78d1;
+}
+
+/* login link */
+.login-link {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+.login-link a {
+  color: #3693b3;
+  text-decoration: none;
+}
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+.footer {
+  margin-top: auto;
+  font-size: 0.8rem;
+  color: #666;
+}
+.footer .privacy-link {
+  color: #666;
+  text-decoration: none;
+}
+
+/* ----- right image panel ----- */
+.register-image {
+  flex: 0 0 440px;
+  background: url('Weblyon Image.jpg') center/cover no-repeat;
+}

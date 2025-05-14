@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* —— Reset & Base —— */
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family:'Poppins',sans-serif;
+  background:#121212;
+  color:#fff;
+  height:100vh;
+  display:flex;
+}
+
+/* —— Overall Layout —— */
+.dashboard-app { display:flex; width:100%; height:100%; }
+
+/* —— Sidebar —— */
+.dashboard-sidebar {
+  width:260px;
+  background:#131619;
+  padding:24px;
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+/* Members dropdown */
+.member-count {
+  color:#00bfff; /* blue */
+  font-size:0.85rem;
+  position:relative;
+}
+.member-count button {
+  background:none;
+  border:none;
+  color:#00bfff;
+  cursor:pointer;
+  margin-left:8px;
+}
+.dropdown {
+  position:absolute;
+  top:1.6em;
+  left:0;
+  background:#1e1e1e;
+  list-style:none;
+  padding:8px;
+  border-radius:6px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.5);
+}
+.dropdown li {
+  padding:4px 8px;
+  white-space:nowrap;
+  cursor:pointer;
+}
+.dropdown li:hover { background:#2c2c2c; }
+.hidden { display:none; }
+
+/* Sidebar sections */
+.sidebar-section h3 {
+  font-size:0.75rem;
+  color:#888;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+.nav-list {
+  list-style:none;
+  margin-bottom:12px;
+}
+.nav-list li {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:8px;
+}
+.icon-home {
+  width:16px;
+  opacity:0.7;
+}
+.nav-list label,
+.nav-list a {
+  font-size:0.9rem;
+  color:#ccc;
+  text-decoration:none;
+}
+.nav-list a:hover,
+.nav-list label:hover { color:#fff; }
+
+/* Uniform sidebar buttons */
+.sidebar-btn {
+  background:#4d90fe;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  padding:10px 24px;
+  font-size:0.9rem;
+  font-weight:600;
+  cursor:pointer;
+  transition:background 0.2s;
+  width:100%;
+}
+.sidebar-btn:hover { background:#3b78d1; }
+
+/* Plus icon */
+.icon-plus {
+  width:16px;
+  opacity:0.7;
+  margin-right:8px;
+}
+
+/* —— Main Panel —— */
+.dashboard-main {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  padding:24px;
+}
+
+/* Action Bar */
+.action-bar {
+  display:flex;
+  gap:12px;
+  justify-content:flex-end;
+  background:#131619;
+  padding:16px;
+  border-radius:12px;
+}
+.action-bar button {
+  padding:10px 24px;
+  font-size:1rem;
+  font-weight:600;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  transition:background 0.2s;
+}
+#signOut {
+  background:#d9534f; color:#fff;
+}
+#signOut:hover { background:#c9302c; }
+#createWorkspace {
+  background:#4d90fe; color:#fff;
+}
+#createWorkspace:hover { background:#3b78d1; }
+#joinWorkspace {
+  background:#808080; color:#fff;
+}
+#joinWorkspace:hover { background:#666; }
+
+/* Workspaces canvas */
+.workspace-section {
+  flex:1;
+  background:#131619;
+  border-radius:12px;
+  padding:20px;
+  overflow-y:auto;
+}
+.workspace-section h3 {
+  font-size:1.25rem;
+  margin-bottom:16px;
+}
+
+/* Chat area - get rid of this maybe*/
+.chat-input-container {
+  display:flex;
+  align-items:center;
+  background:#131619;
+  padding:12px 16px;
+  border-radius:12px;
+  gap:8px;
+}
+
+.attach-btn, .send-btn {
+  width:40px;
+  height:40px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.attach-btn img, .send-btn img {
+  width:24px; height:24px; opacity:0.7;
+}
+.attach-btn:hover img, .send-btn:hover img {
+  opacity:1;
+}
+#chatInput {
+  flex:1;
+  padding:12px 14px;
+  background:#1e1e1e;
+  border:1px solid #333;
+  border-radius:8px;
+  color:#fff;
+  font-size:1rem;
+  outline:none;
+}
+#chatInput::placeholder { color:#777; }
+
+/* —— Chat messages —— */
+.chat-container {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  padding:16px;
+  overflow-y:auto;
+  background:#131619;
+  border-radius:12px;
+}
+
+.chat-message {
+  max-width:60%;
+  padding:12px 16px;
+  border-radius:16px;
+  word-wrap:break-word;
+}
+.chat-message.user {
+  background:#0b86e3;
+  color:#fff;
+  align-self:flex-end;
+}
+.chat-message.ai {
+  background:#1e1e1e;
+  color:#fff;
+  align-self:flex-start;
+}
+
+/* —— Template preview cards —— */
+.template-options {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:8px;
+}
+.template-card {
+  width:120px;
+  height:80px;
+  background:#222;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0.9rem;
+  color:#fff;
+}
